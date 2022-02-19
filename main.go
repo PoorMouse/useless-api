@@ -4,8 +4,6 @@ import (
 	"log"
 	"net/http"
 	"os"
-
-	"github.com/joho/godotenv"
 )
 
 //Main info
@@ -22,18 +20,10 @@ var (
 	ErrLog  *log.Logger
 )
 
-func init() {
+func main() {
 	InfoErr = log.New(os.Stdout, "INFO: ", log.Ldate|log.Ltime)
 	ErrLog = log.New(os.Stdout, "ERROR: ", log.Ldate|log.Ltime|log.Lshortfile)
 
-	err := godotenv.Load()
-
-	if err != nil {
-		ErrLog.Fatal(err)
-	}
-}
-
-func main() {
 	err := DBConnect()
 	if err != nil {
 		ErrLog.Fatal(err)
