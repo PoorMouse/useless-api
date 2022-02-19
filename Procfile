@@ -1,1 +1,1 @@
-web: useless-api
+web: bin/useless-api

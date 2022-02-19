@@ -45,7 +45,7 @@ func main() {
 	mux.HandleFunc("/getUsers", getUsers)
 	mux.HandleFunc("/getComments", getComments)
 
-	port := os.Getenv("SRV_PORT")
+	port := os.Getenv("PORT")
 
 	InfoErr.Println("Server has been started")
 	ErrLog.Fatal(http.ListenAndServe(":"+port, mux))

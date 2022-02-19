@@ -10,4 +10,4 @@ https://example.com/getComments?id=1
 
 All responses come in JSON format.
 
-[Try it](http://uselesss-api.heroku.com).
+[Try it](https://uselesss-api.herokuapp.com).
