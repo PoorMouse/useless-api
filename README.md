@@ -2,7 +2,7 @@
 
 There are only 2 methods you can use:
 - **getUsers**, which gives you a list of all users in database
-- **getComments** will provide comments of an actual user (requires user ID)
+- **getComments** provides comments of an actual user (requires user ID)
 
 ``` sh
 https://example.com/getComments?id=1
